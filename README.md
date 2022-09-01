@@ -1,21 +1,24 @@
-#include<stdio.h>
+include <stdio.h>
+int isEven(int num)
+{
+    return !(num & 1);
+}
+
+
 int main()
 {
-int i,n;
-  for (int i = 1;; i++) {
-    if (n % i == 0) {
-      n /= i;
+    int num;
+    printf("Enter any number: ");
+    scanf("%d", &num)
+    if(isEven(num))
+    {
+        printf("The number is even.");
     }
-    else {
-      break;
+    else
+    {
+        printf("The number is odd.");
     }
-  }
-  
-  if (n == 1) {
-    return true;
-  }
-  else {
-    return false;
-  }
+    
+    return 0;
 }
- 
+
